@@ -1,0 +1,106 @@
+.navbar {
+    background: #dee2e1;
+    background: linear-gradient(180deg, #e8e8e8 0%, #ffffff 90%);
+    text-align: center;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    color: #2f2f2f;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #2f2f2f;
+}
+
+.navbar .topbar {
+    padding: 10px 0;
+}
+
+.navbar .topbar ul {
+    display: inline;
+}
+
+.navbar .topbar li {
+    display: inline;
+    padding: 10px;
+}
+
+.navbar .topbar .left {
+    margin-right: 400px;
+}
+
+.navbar .topbar .right {
+    margin-left: 400px;
+}
+
+.navbar .topbar .right img {
+    height: 25px;
+    vertical-align: middle;
+}
+
+.navbar .bottombar {
+    padding: 5px 0;
+}
+
+.navbar .bottombar li {
+    display: inline-block;
+    padding: 0px 40px;
+    vertical-align: middle;
+}
+
+.navbar .bottombar .logo {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar .bottombar .cart_icon {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar .bottombar .community{
+    font-size: 20px;
+}
+
+.navbar .bottombar .searchbar {
+    background: #dee2e1;
+    border-radius: 40px;
+    height: 35px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.navbar .bottombar .searchbar input {
+    width: 400px;
+    height: 35px;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 10px;
+    margin: 0 10px;
+}
+
+.navbar .bottombar .searchbar button {
+    width: 35px;
+    height: 35px;
+    background: #4a4a4a;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 1px 1px 0px 1px #6d6d6d;
+}
+
+.navbar .bottombar .searchbar img {
+    height: 1.25rem;
+}
+
+.navbar .bottombar .adv_search {
+    position: absolute;
+    margin: .4rem 1rem;
+    cursor: pointer;
+}
+
+.navbar .bottombar .adv_search p {
+    cursor: pointer;
+}
