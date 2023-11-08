@@ -1,0 +1,206 @@
+.adv_search_screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    vertical-align: middle;
+    z-index: 3;
+    animation: open_adv_search .5s;
+}
+
+@keyframes open_adv_search {
+    from {
+        opacity: 0;
+        height: 50%;
+    }
+    to {
+        opacity: 1;
+        height: 100%;
+    }
+}
+
+@keyframes close_adv_search {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.adv_search_screen .adv_search_popup {
+    width: 36rem;
+    height: fit-content;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.adv_search_screen .adv_search_popup .close_icon {
+    position: absolute;
+    height: 3rem;
+    display: flex;
+    margin-top: .5%;
+    margin-left: 35.8%;
+    transform: rotate(-20deg);
+    transform-origin: top;
+    cursor: pointer;
+    animation: close_icon_anim 3s infinite paused;
+}
+
+.adv_search_screen .adv_search_popup .close_icon:hover {
+    animation-play-state: running;
+}
+
+@keyframes close_icon_anim {
+    0% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
+}
+
+.adv_search_screen .adv_search_popup .adv_search_head {
+    width: 100%;
+    height: 7.6rem;
+    overflow: hidden;
+    transition: 1.5s;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_head:hover {
+    height: 9.5rem;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_head img {
+    width: 100%;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_main li {
+    display: inline-block;
+    width: 25%;
+    height: 2rem;
+    margin: .8rem .5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    text-align: left;
+    padding: .4rem;
+    overflow: hidden;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_main p {
+    display: inline-block;
+    font-size: .8rem;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_main div {
+    position: relative;
+    width: 120%;
+    height: .3rem;
+    transform: translate(-.6rem, .17rem);
+    background-color: #dee2e1;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_main img {
+    height: 1.5rem;
+    float: left;
+    margin-right: .25rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.adv_search_screen .adv_search_popup .adv_search_main select {
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    transition: .5s;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_main select:hover, :focus {
+    background-color: #f6f6f6;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_main select:invalid {
+    color: #6d6d6d;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_main select option {
+    color: #2f2f2f;
+}
+
+input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_main input[type=number] {
+    display: inline-block;
+    margin-left: .1rem;
+    width: 35%;
+    height: 100%;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+    appearance: textfield;
+    transition: .5s;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_main input[type=number]:hover, :focus {
+    background-color: #f6f6f6;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_main input[type=image] {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    height: 1.7rem;
+    padding: .35rem 3rem;
+    border-radius: 50rem;
+    background-color: #4a4a4a;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    transition: .5s;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_main input[type=image]:hover {
+    background-color: #2f2f2f;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_main .adv_search_bar {
+    width: fit-content;
+    height: 1.5rem;
+    border-radius: 1rem;
+    background-color: #dee2e1;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_main input[type=text] {
+    width: 14rem;
+    height: 100%;
+    border: none;
+    border-radius: .5rem;
+    background-color: transparent;
+    margin: auto 1rem;
+    outline: none;
+    transition: .8s;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_main input[type=text]:focus {
+    width: 23rem;
+}
+
+.adv_search_screen .adv_search_popup .adv_search_main input[type=text]:valid {
+    width: 23rem;
+}
